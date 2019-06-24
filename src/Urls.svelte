@@ -61,6 +61,8 @@
 
   :global(sup::after) {
     content: '/';
+    margin-left: .1em;
+    margin-right: -.2em;
   }
 </style>
 
