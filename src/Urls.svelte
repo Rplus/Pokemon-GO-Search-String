@@ -26,6 +26,10 @@
 </script>
 
 <style>
+  details {
+    margin-left: 5vmin;
+  }
+
   .li {
     display: flex;
     align-items: start;

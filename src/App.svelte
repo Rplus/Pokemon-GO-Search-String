@@ -51,7 +51,9 @@
 .workspace {
   display: flex;
   flex-direction: column;
-  min-height: 95vh;
+  max-width: 40rem;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 </style>
 
@@ -60,7 +62,12 @@
 
 
 <div class="workspace">
-  <h1>Pokémon Go Search String Generateor</h1>
+  <h1>
+    Search String Generateor
+    <div class="sub-tittle">Pokémon Go</div>
+  </h1>
+
+  <hr>
 
   <div class="label">
     Pokémon:
@@ -156,6 +163,9 @@
   <Urls on:apply={ applyUrl } />
 
   <footer>
-    formula source from <a href="http://ark42.com/pogo/search.php">http://ark42.com/pogo/search.php</a>
+    formula source from:
+    <a href="http://ark42.com/pogo/search.php">http://ark42.com/pogo/search.php</a>
+    GitHub repo:
+    <a href="https://github.com/rplus/Search-String">https://github.com/rplus/Search-String</a>
   </footer>
 </div>

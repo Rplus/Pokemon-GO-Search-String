@@ -1,4 +1,8 @@
 <style>
+:global(*) {
+  box-sizing: border-box;
+  margin: 0;
+}
 :global(html, body) {
   position: relative;
   width: 100%;
@@ -8,8 +12,22 @@
 :global(body) {
   color: #333;
   margin: 0;
-  padding: 8px;
+  padding: 0 .5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+:global(h1) {
+  display: inline-block;
+  width: max-content;
+  margin: 0 auto;
+  padding-top: .5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+}
+:global(.sub-tittle) {
+  text-align: right;
+  font-size: 1rem;
 }
 
 :global(a) {
@@ -62,10 +80,6 @@
   border: 1px dashed #eee;
 }
 
-:global(*) {
-  box-sizing: border-box;
-}
-
 :global(input) {
   max-width: 9em;
 }
@@ -80,8 +94,17 @@
 }
 
 :global(footer) {
-  margin-top: auto; 
-  text-align: right;
+  margin-left: auto;
+  margin-top: auto;
+  font-style: italic;
+  font-family: serif;
+  color: #666;
+}
+:global(footer a) {
+  display: block;
+  margin-left: 2em;
+  margin-bottom: .5em;
+  font-size: smaller;
 }
 
 :global(.btn-grounp) {
