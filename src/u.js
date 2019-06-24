@@ -107,8 +107,6 @@ export function genOptions(v, l = v) {
 };
 
 
-const urlParamsWL = ['uid', 'min_iv', 'min_iv_a', 'min_iv_d', 'min_iv_s', 'min_lv', 'max_lv', 'lang', 'trash'];
-const numberTypes = ['min_iv', 'min_iv_a', 'min_iv_d', 'min_iv_s', 'min_lv', 'max_lv'];
 const defaultUrl = {
   uid: '1',
   iads: [44, 14, 13, 13],
