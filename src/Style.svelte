@@ -89,7 +89,9 @@
   height: 50%;
   max-width: 100%;
   min-height: 8em;
+  resize: vertical;
   padding: .6em .8em;
+  overflow-y: scroll;
   box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .3);
 }
 
@@ -110,7 +112,7 @@
 :global(.btn-grounp) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 :global(.btn) {
