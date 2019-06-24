@@ -12,7 +12,7 @@
 
   let data = { ...u.urlCoCoCo(location.hash) };
 
-  $: data.pm = getPM(data.uid);
+  $: data.pm = u.getPM(data.uid);
   $: data.pmName = getTitle(data.uid);
   $: data.cphp = langs.find(l => l[0] === data.lang).slice(1, 3);
   $: data.searchString = u.searchString(data);
@@ -30,16 +30,12 @@
     data = { ...u.urlCoCoCo(apply.detail.url) };
   }
 
-  function getPM(uid) {
-    return pms.find(_pm => _pm.uid === uid);
-  }
-
   function getPmName(ddex, lang = data.lang) {
     return u.getPmName(ddex, lang);
   }
 
   function getTitle(uid) {
-    let pm = getPM(uid);
+    let pm = u.getPM(uid);
     if (!pm) { return ''; }
 
     let n = getPmName(pm.ddex, data.lang);

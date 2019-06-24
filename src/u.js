@@ -177,8 +177,11 @@ export const options = {
     .map(i => [i, i + 1]).reverse(),
 };
 
+export function getPM(uid) {
+  return pms.find(_pm => _pm.uid === uid);
+};
 
-export function getPmName(ddex, lang) {
+export function getPmName(ddex, lang = 'en') {
   return names[ddex][lang] || names[ddex].en;
 }
 
