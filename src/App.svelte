@@ -63,7 +63,7 @@
 
 <div class="workspace">
   <h1>
-    Search String Generateor
+    Search String Generator
     <div class="sub-tittle">Pokémon Go</div>
   </h1>
 
