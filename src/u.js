@@ -112,7 +112,7 @@ const numberTypes = ['min_iv', 'min_iv_a', 'min_iv_d', 'min_iv_s', 'min_lv', 'ma
 const defaultUrl = {
   uid: '1',
   iads: [44, 14, 13, 13],
-  lv: [0, 34],
+  lv: [1, 35],
   lang: 'en',
   trash: true,
 };
@@ -174,7 +174,7 @@ export const options = {
   iv: [...Array(16).keys()].reverse(),
 
   lv: [...Array(40).keys()]
-    .map(i => [i, i + 1]).reverse(),
+    .map(i => i + 1).reverse(),
 };
 
 export function getPM(uid) {

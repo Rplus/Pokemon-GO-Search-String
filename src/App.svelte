@@ -116,13 +116,13 @@
     Level:
     <select bind:value={ data.min_lv }>
       {#each u.options.lv as i}
-        <option value={i[0]}>{i[1]}</option>
+        <option value={i}>{i}</option>
       {/each}
     </select>
     -
     <select bind:value={ data.max_lv }>
       {#each u.options.lv as i}
-        <option value={i[0]}>{i[1]}</option>
+        <option value={i}>{i}</option>
       {/each}
     </select>
   </div>
