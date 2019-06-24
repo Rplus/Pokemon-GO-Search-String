@@ -1,0 +1,11 @@
+[
+  ["en", "cp", "hp", "English"],
+  ["ja", "cp", "hp", "Japanese"],
+  ["fr", "pc", "pv", "French"],
+  ["es", "pc", "ps", "Spanish"],
+  ["de", "wp", "kp", "German"],
+  ["il", "pl", "ps", "Italian"],
+  ["ko", "cp", "hp", "Korean"],
+  ["zh", "cp", "hp", "Chinese"],
+  ["pt", "pc", "ps", "Portuguese"]
+]
