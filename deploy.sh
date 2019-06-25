@@ -8,6 +8,8 @@ set -e
 # move assets
 cp ./index.html ./public/
 cp ./favicon.png ./public/
+cp ./manifest.json ./public/
+cp -r ./images ./public/
 
 # navigate into the build output directory
 cd 'public'
