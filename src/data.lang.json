@@ -1,4 +1,5 @@
 [
+  ["zh", "cp", "hp", "Chinese"],
   ["en", "cp", "hp", "English"],
   ["ja", "cp", "hp", "Japanese"],
   ["fr", "pc", "pv", "French"],
@@ -6,6 +7,5 @@
   ["de", "wp", "kp", "German"],
   ["il", "pl", "ps", "Italian"],
   ["ko", "cp", "hp", "Korean"],
-  ["zh", "cp", "hp", "Chinese"],
   ["pt", "pc", "ps", "Portuguese"]
 ]
