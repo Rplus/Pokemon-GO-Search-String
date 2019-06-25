@@ -2,7 +2,6 @@
   import Textaea from './Textaea.svelte';
 
   import Urls from './Urls.svelte';
-  import Style from './Style.svelte';
 
   import { historeUrls } from './stores.js';
 
@@ -47,19 +46,7 @@
 
 </script>
 
-<style>
-.workspace {
-  display: flex;
-  flex-direction: column;
-  max-width: 40rem;
-  min-height: 100vh;
-  margin: 0 auto;
-}
-</style>
-
-
-<Style />
-
+<style src="./style.css" global></style>
 
 <div class="workspace">
   <h1>
