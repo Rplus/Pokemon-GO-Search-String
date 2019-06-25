@@ -163,9 +163,9 @@
   <Urls on:apply={ applyUrl } />
 
   <footer>
-    formula source from:
-    <a href="http://ark42.com/pogo/search.php">http://ark42.com/pogo/search.php</a>
     GitHub repo:
     <a href="https://github.com/rplus/Search-String">https://github.com/rplus/Search-String</a>
+    formula source:
+    <a href="http://ark42.com/pogo/search.php">http://ark42.com/pogo/search.php</a>
   </footer>
 </div>
