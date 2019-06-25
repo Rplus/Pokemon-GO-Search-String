@@ -17,10 +17,6 @@ function createUrls() {
       n.filter(i => i !== a)
     ),
 
-    save: () => {
-      console.log('save');
-    },
-
     reset: () => set([]),
   };
 }
