@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "bundle.js",
-    "revision": "b16a7254bb57363e29129f93af7ab72f"
+    "revision": "f1fcf396af186c76ec1b20aafbc8e071"
   },
   {
     "url": "favicon.png",
@@ -71,7 +71,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2ec2a0a18d0bd7c50889d54054b2feb6"
+    "revision": "92838498c40343c8c63907215b7d036d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
