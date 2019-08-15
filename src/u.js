@@ -119,7 +119,7 @@ export function urlCoCoCo(hash) {
   let urlo = [...new URLSearchParams(hash.replace(/^#/, ''))]
     .reduce((all, i) => {
       let v = i[1];
-      if (v.indexOf('-') !== -1) {
+      if (v.indexOf('-') !== -1 && i[0] !== 'uid') {
         v = v.split('-').map(Number);
       }
       all[ i[0] ] = v;
