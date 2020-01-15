@@ -3,9 +3,13 @@ import cpm from './data.cpm.json';
 import langs from './data.lang.json';
 import names from './data.name.json';
 
+export function genDdex(dex) {
+  return `00${dex}`.slice(-3);
+}
+
 pms.forEach(pm => {
   pm.uid = pm.dex + (pm.isotope ? `-${pm.isotope}` : '');
-  pm.ddex = `00${pm.dex}`.slice(-3);
+  pm.ddex = genDdex(pm.dex);
   pm.name = getPmName(pm.ddex, 'en');
 });
 

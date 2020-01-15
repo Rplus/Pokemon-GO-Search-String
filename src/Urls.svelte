@@ -3,7 +3,7 @@
   const dispatch = createEventDispatcher();
 
   import { historeUrls, savedUrl } from './stores.js';
-  import { getPmName, urlCoCoCo, getPM } from './u.js';
+  import { getPmName, urlCoCoCo, getPM, genDdex } from './u.js';
 
   function applyUrl(p) {
     dispatch('apply', {
@@ -13,7 +13,8 @@
 
   function itemTitle(url) {
     let o = urlCoCoCo(url);
-    let n = getPmName(getPM(o.uid).ddex, o.lang);
+    let ddex = (getPM(o.uid) && getPM(o.uid).ddex) || genDdex(o.uid);
+    let n = getPmName(ddex, o.lang);
     return [n, ...url.split('&')].map(i => {
       let ii = i.split('=').reverse();
 
